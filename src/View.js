@@ -56,7 +56,7 @@ devToolElement.append(devToolToggle, devToolCursor, detToolClick)
 
 // Functions to update dev console values
 // Done in a Class style but with a simple object
-const devTool = {
+export const devTool = {
     cursorPosition: (x, y) => {
         // Only updating the inner text of span elements
         devToolCursorValueX.innerText = x

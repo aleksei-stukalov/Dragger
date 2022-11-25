@@ -2,9 +2,9 @@
   "name": "dragger",
   "version": "1.0.0",
   "description": "Small example of draggable object with it's parent's hard boundries.",
-  "main": "index.js",
+  "main": "src/Controller.js",
   "scripts": {
-    "test": "dev-test"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/yUtopist/Dragger/issues"
   },
-  "homepage": "https://github.com/yUtopist/Dragger#readme"
+  "homepage": "https://github.com/yUtopist/Dragger#readme",
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
+  }
 }
