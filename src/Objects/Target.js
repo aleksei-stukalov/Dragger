@@ -1,4 +1,4 @@
-class Target {
+export default class Target {
     constructor (element) {
         this.element = element
         this.name = element.id

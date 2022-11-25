@@ -1,3 +1,11 @@
+import Target from './Objects/Target.js'
+import './View.js'
+import { devTool } from './View.js'
+
+const d = document
+const w = window
+const body = d.querySelector('body')
+
 // Lets declare all of the draggable objects in the game.
 // In the proper envirement we would not have this declaration, and instead push
 // new game objects straight up to the game view, or to other proper container.

@@ -2,7 +2,6 @@ const d = document
 const w = window
 const body = d.querySelector('body')
 
-
 // Lets fill up our Dev Console and have its State stored.
 const devToolElement = d.querySelector('#dev-console')
 devToolElement.classList.add('hidden')

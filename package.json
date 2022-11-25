@@ -1,0 +1,19 @@
+{
+  "name": "dragger",
+  "version": "1.0.0",
+  "description": "Small example of draggable object with it's parent's hard boundries.",
+  "main": "index.js",
+  "scripts": {
+    "test": "dev-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yUtopist/Dragger.git"
+  },
+  "author": "Aleksei Stukalov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yUtopist/Dragger/issues"
+  },
+  "homepage": "https://github.com/yUtopist/Dragger#readme"
+}
