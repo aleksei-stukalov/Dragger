@@ -3,6 +3,7 @@ import './src/View.js'
 import { devTool } from './src/View.js'
 
 require('file-loader?name=[name].[ext]!/index.html');
+require('file-loader?name=[name].[ext]!/main.css');
 
 const d = document
 const w = window
