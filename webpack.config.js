@@ -3,10 +3,10 @@ const path = require('path')
 module.exports = {
     mode: 'development',
     entry: {
-        bundle: path.resolve(__dirname, 'Controller.js'),
+        Controller: path.resolve(__dirname, 'src/Controller'),
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].js'
+        filename: 'src/[name].js'
     }
 }
