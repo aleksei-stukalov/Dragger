@@ -18,6 +18,7 @@
   "homepage": "https://github.com/yUtopist/Dragger#readme",
   "devDependencies": {
     "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.0"
   }
