@@ -1,6 +1,4 @@
 const d = document
-const w = window
-const body = d.querySelector('body')
 
 // Lets fill up our Dev Console and have its State stored.
 const devToolElement = d.querySelector('#dev-console')
@@ -57,6 +55,10 @@ devToolElement.append(devToolToggle, devToolCursor, detToolClick)
 // Functions to update dev console values
 // Done in a Class style but with a simple object
 export const devTool = {
+    reset: () => {
+        detToolClickTargetValue.innerText = 'Empty'
+        detToolClickStateValue.innerText = 'Idle'
+    },
     cursorPosition: (x, y) => {
         // Only updating the inner text of span elements
         devToolCursorValueX.innerText = x
