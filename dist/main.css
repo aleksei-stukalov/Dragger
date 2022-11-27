@@ -94,13 +94,13 @@ body {
 }
 
 #objectA {
-	top: 0;
-	left: 0;
+	top: 150px;
+	left: 300px;
 }
 
 #objectB {
-	top: 150px;
-	left: 300px;
+	top: 450px;
+	left: 600px;
 }
 
 .object {
