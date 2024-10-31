@@ -18,36 +18,35 @@ const devToolCursorValueY = devToolCursorY.querySelector('span')
 // Adding position representative elements to the parent
 devToolCursor.append(devToolCursorX, devToolCursorY)
 
-
 // Mouse click detection
 const detToolClick = d.createElement('div')
 detToolClick.id = 'dev-console_click'
 //
-const detToolClickState = d.createElement('h4')
-detToolClickState.innerHTML = `mouse state: <span>Idle</span>`
+const devToolClickState = d.createElement('h4')
+devToolClickState.innerHTML = `mouse state: <span>Idle</span>`
 //
-const detToolClickStateValue = detToolClickState.querySelector('span')
+const devToolClickStateValue = devToolClickState.querySelector('span')
 // Adding to Click detector
-detToolClick.append(detToolClickState)
-
+detToolClick.append(devToolClickState)
 
 // Click target detection
-const detToolClickTarget = d.createElement('div')
-detToolClickTarget.id = 'dev-console_target'
+const devToolClickTarget = d.createElement('div')
+devToolClickTarget.id = 'dev-console_target'
 //
-const detToolClickTargetState = d.createElement('h4')
-detToolClickTargetState.innerHTML = `click target: <span>Empty</span>`
+const devToolClickTargetState = d.createElement('h4')
+devToolClickTargetState.innerHTML = `click target: <span>Empty</span>`
 //
-const detToolClickTargetValue = detToolClickTargetState.querySelector('span')
+const devToolClickTargetValue = devToolClickTargetState.querySelector('span')
 // Adding to Click detector
-detToolClick.append(detToolClickTargetState)
-
+detToolClick.append(devToolClickTargetState)
 
 // Toggle button
 const devToolToggle = d.createElement('button')
 devToolToggle.id = 'dev-console_toggle'
 devToolToggle.innerText = 'Toggle Console'
-devToolToggle.addEventListener('click', () => devToolElement.classList.toggle('hidden'))
+devToolToggle.addEventListener('click', () =>
+  devToolElement.classList.toggle('hidden')
+)
 
 // Adding everything to the console. This should be the very last line of dev console logic
 devToolElement.append(devToolToggle, devToolCursor, detToolClick)
@@ -55,16 +54,16 @@ devToolElement.append(devToolToggle, devToolCursor, detToolClick)
 // Functions to update dev console values
 // Done in a Class style but with a simple object
 export const devTool = {
-    reset: () => {
-        detToolClickTargetValue.innerText = 'Empty'
-        detToolClickStateValue.innerText = 'Idle'
-    },
-    cursorPosition: (x, y) => {
-        // Only updating the inner text of span elements
-        devToolCursorValueX.innerText = x
-        devToolCursorValueY.innerText = y
-    },
-    cursorState: (state) => detToolClickStateValue.innerText = state,
-    targetName: (state) => detToolClickTargetValue.innerText = state ? state : null
+  reset: () => {
+    devToolClickTargetValue.innerText = 'Empty'
+    devToolClickStateValue.innerText = 'Idle'
+  },
+  cursorPosition: (x, y) => {
+    // Only updating the inner text of span elements
+    devToolCursorValueX.innerText = x
+    devToolCursorValueY.innerText = y
+  },
+  cursorState: (state) => (devToolClickStateValue.innerText = state),
+  targetName: (state) =>
+    (devToolClickTargetValue.innerText = state ? state : null),
 }
-
